@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap');
+
+
+.logo{
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    align-items: center;
+}
+
+.logo img{
+    height: 130px;
+    width: 300px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-size: cover;
+}
+
+.topnav {
+    overflow: hidden;
+    min-width: 850px;
+    align-items: center;
+    font-family: 'Jockey One', sans-serif;
+    display: flex;
+    height: 100px;
+    padding-left: 15px;
+  }
+  
+  .topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    align-items: flex-end;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-size: 40px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: rgb(11, 11, 66);
+  }
+
+  .topnav a.active {
+    color: rgb(11, 11, 66);
+  }
+
+nav{
+    width: 1000px;
+    height: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 450px;
+    align-items: flex-end;
+    }
+
+header{
+    background-color: rgb(113, 112, 173);
+    }
+
+    #header-bar.header-bar{
+        background-color: rgb(113, 112, 173);
+        height: 150px;
+        min-width: 960px;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-flow: row;
+        -webkit-box-align: center;
+        text-align: center;
+        position: relative;
+        }
+
+.container{
+    margin: 10px;
+    padding: 5px;
+}
+
+.container-header h1{
+    text-align: center;
+    align-items: flex-end;
+    font-family: 'Jockey One', sans-serif;
+    color: rgb(10,8,92);
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container-body{
+    background-color: rgb(208,223,245);
+    height: 630px;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+span{
+    font-size: 25px;
+    font-weight: 100;
+    text-align: justify;
+    color:rgb(115, 10, 10);
+}
+
+form{
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 550px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.form-group{
+    align-items: center;
+    
+}
+
+.col1{
+    float: left;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 50px;
+    line-height: 100px;
+    padding-top: 50px;
+    width: 350px;
+    align-items: center;
+
+}
+
+.col2{
+    float: right;
+    font-family: 'Jockey One', sans-serif;
+    font-size: 50px;
+    line-height: 100px;
+    padding-top: 50px;
+    padding-left: 20px;
+    width: 650px;
+}
+
+.product_name_col{
+    width: 200px;
+}
+
+table.first_table{
+    height: 480px;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+tbody{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.second_table{
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+td{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: auto;
+}
+
+input.form-control{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 25px;
+    width: 550px;
+    height: 50px;
+    text-align: center;
+}
+
+textarea{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 25px;
+    width: 550px;
+    height: 90px;
+    text-align: center;
+}
+
+#add_btn{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 30px;
+    background-color: rgb(25,60,92);
+    color: #ddd;
+    width: 200px;
+    height: 60px;
+}
+
+#view_btn{
+    font-family: 'Jockey One', sans-serif;
+    font-size: 30px;
+    background-color: rgb(25,60,92);
+    color: #ddd;
+    width: 200px;
+    height: 60px;
+}
+
+footer{
+    background-color: rgb(113, 112, 173);
+    height: 150px;
+    min-width: 960px;
+    margin-top: 20px;
+}
+
+.bottomnav {
+    overflow: hidden;
+    min-width: 850px;
+    align-items: center;
+    font-family: 'Jockey One', sans-serif;
+    display: flex;
+    height: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .bottomnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    align-items: flex-end;
+    padding: 14px 40px;
+    text-decoration: none;
+    font-size: 35px;
+  }
+  
+  .bottomnav a:hover {
+    background-color: #ddd;
+    color: rgb(11, 11, 66);
+  }
+
+  .bottomnav a.active {
+    color: rgb(11, 11, 66);
+  }

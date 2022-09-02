@@ -1,0 +1,173 @@
+<?php
+require_once('code.php');
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View products page</title>
+    <link type="text/css" rel="stylesheet" href="add_product.css">
+</head>
+<body>
+    <header id="header-bar" class="header-bar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../img/logo.png" alt="logo"/>
+            </a> 
+        </div>
+        <nav>
+            <div class="topnav">
+                <a href="index.php" class="active">Home</a>
+                <a href="add_product.php">Add Product</a>
+                <a href="products.php">View Products</a>
+                <a href="my_account.php">My Account</a>
+                <a href="login.php">Login</a>
+            </div>
+        </nav>
+    </header>    
+    <main>
+    <div class="">
+        <div class="row">
+            <div class="product_1">
+                <div class="product_img">
+                    <img src="../img/ullzang shoes.png"/>
+                </div>
+                <div class="product_container">
+                    <div class="product_name"></div>
+                    <div class="product_price"></div>
+                    <div class="product_description"></div>
+
+                </div>
+            </div>
+            <div class="product_2">
+                <div class="product_img">
+                    <img src="../img/Korean shoes.png"/>
+                </div>
+                <div class="product_container">
+                    <div class="product_name"></div>
+                    <div class="product_price"></div>
+                    <div class="product_description"></div>
+                </div>
+            </div>
+            <div class="product_3">
+                <div class="product_img">
+                    <img src="../img/Polo shirt.png"/>
+                </div>
+                <div class="product_container">
+                    <div class="product_name"></div>
+                    <div class="product_price"></div>
+                    <div class="product_description"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product_4">
+                <div class="product_img">
+                    <img src="../img/Polo shirt.png"/>
+                </div>
+                <div class="product_container">
+                    <div class="product_name"></div>
+                    <div class="product_price"></div>
+                    <div class="product_description"></div>
+                </div>
+            </div>
+            <div class="product_5">
+                <div class="product_img">
+                    <img src="../img/Blackrouge lipstick.png"/>
+                </div>
+                <div class="product_container">
+                    <div class="product_name"></div>
+                    <div class="product_price"></div>
+                    <div class="product_description"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<footer>
+    <div class="bottomnav">
+        <a href="aboutus.html">About Us</a>
+        <a href="copyright.html">Copyright</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="helplinks.html">Help links</a>
+    </div>
+</footer>
+</html>
+
+
+<?php
+require_once('productFunctions.php');
+// Set Variables for featured products
+$featuredProductsNames = array();
+$featuredProducts = readFeaturedProducts();
+$featuredProductsCount = 0;
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View products page</title>
+    <link type="text/css" rel="stylesheet" href="add_product.css">
+</head>
+<body>
+    <header id="header-bar" class="header-bar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../img/logo.png" alt="logo"/>
+            </a> 
+        </div>
+        <nav>
+            <div class="topnav">
+                <a href="index.php" class="active">Home</a>
+                <a href="add_product.php">Add Product</a>
+                <a href="view_product.php">View Products</a>
+                <a href="my_account.php">My Account</a>
+                <a href="login.php">Login</a>
+            </div>
+        </nav>
+    </header>    
+    <main>
+    <div class="">
+        <div class="row">
+        <?php
+            foreach ($featuredProducts as $featuredProduct) {
+            $name = $featuredProduct['name'];
+            $price = $featuredProduct['price'];
+            $description = $featuredProduct['description'];
+            echo "
+                <div class='product-item1'>
+                    <div class='img-div1'></div>
+                    <h3>$name</h3>
+                    <h3>$price</h3>
+                    <h3>$description</h3>
+                    <br>
+                </div>";
+                
+                $featuredProductsCount++;
+                if ($featuredProductsCount == 5) {
+                    break;
+                }
+            }
+            ?>
+        </div>
+    </div>
+    </main>
+
+<footer>
+    <div class="bottomnav">
+        <a href="aboutus.html">About Us</a>
+        <a href="copyright.html">Copyright</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="helplinks.html">Help links</a>
+    </div>
+</footer>
+</html>
+
+
+
